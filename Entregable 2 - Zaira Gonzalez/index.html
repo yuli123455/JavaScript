@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Notas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	<div class="container">
+        <h1>Reporte de Notas Zaira González</h1>
+        <div id="materia"></div>
+        <input type="number" min="0" max="5" id="notaInput" class="hidden">
+        <button id="registroNotaBtn" class="hidden">Registrar Nota</button>
+   
+		<button id="listarBtn" type="button" class="hidden" onclick="listar()">Listar Notas</button>
+		<button id="promedioBtn" type="button" class="hidden" onclick="promedio()">Promedio</button>
+		<button id="notaAltaBtn" type="button" class="hidden" onclick="notaAlta()">Nota mas alta</button>
+		<button id="aplazosBtn" type="button" class="hidden" onclick="aplazos()">Aplazos</button>
+	</div>
+    
+	 <script src="./js/script.js"></script>
+</body>
+
+</html>
