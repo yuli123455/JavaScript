@@ -1,9 +1,9 @@
 let notas = [
-    { nota: 'Ingresa la nota de Programación', valorNota: 0 },
-    { nota: 'Ingresa la nota de Lógica Matemática', valorNota: 0 },
-    { nota: 'Ingresa la nota de Bases de Datos', valorNota: 0 },
-    { nota: 'Ingresa la nota de Hardware', valorNota: 0 },
-    { nota: 'Ingresa la nota de Física', valorNota: 0 }
+    { nota: 'Nota de Programación: ', valorNota: 0 },
+    { nota: 'Nota de Lógica Matemática: ', valorNota: 0 },
+    { nota: 'Nota de Bases de Datos: ', valorNota: 0 },
+    { nota: 'Nota de Hardware: ', valorNota: 0 },
+    { nota: 'Nota de Física: ', valorNota: 0 }
 	];
 
 	let currentNota = 0;
@@ -58,7 +58,7 @@ function listar(){
     for(let nota of notas){
         
         let li = document.createElement("li");
-        let liTexto = document.createTextNode(nota.valorNota);
+        let liTexto = document.createTextNode(nota.nota + " " + nota.valorNota);
         li.appendChild(liTexto);
         ul.appendChild(li);
     }
